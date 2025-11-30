@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,19 +9,67 @@
     <title>Message app</title>
 
 </head>
+
 <body>
     <div class="sidebar">
-           <h1>Chats bar</h1>
-           <div class="user">Katya</div>
-           <div class="user">Freetje</div>
-           <div class="user">User</div>
-           
-    </div> 
+
+        <div class="search-box">
+            <img src="Asset 27.png" alt="logo">
+            <input type="text" placeholder="Search">
+        </div>
+
+        <div class="chat-list">
+
+            <div class="chat-card user" data-name="Katya">
+                <img src="Katya.jpg" class="avatar">
+                <div class="chat-info">
+                    <div class="top-row">
+                        <span class="name">Katya💖</span>
+                        <span class="time">10:48 AM</span>
+                    </div>
+                    <div class="bottom-row">
+                        <span class="last-msg">Good morning Kittyyyy</span>
+                        <span class="unread">2</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chat-card user" data-name="Amelle">
+                <img src="Amelle.jpg" class="avatar">
+                <div class="chat-info">
+                    <div class="top-row">
+                        <span class="name">Amelle</span>
+                        <span class="time">18/11/2025</span>
+                    </div>
+                    <div class="bottom-row">
+                        <span class="last-msg">Ahh always we have problems cutie. We resist those problems and keep it up the life we</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chat-card user" data-name="User">
+                <img src="user.jpg" class="avatar">
+                <div class="chat-info">
+                    <div class="top-row">
+                        <span class="name">User</span>
+                        <span class="time">Yesterday</span>
+                    </div>
+                    <div class="bottom-row">
+                        <span class="last-msg">Okay bro</span>
+                        <span class="unread">1</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
     <div class="chat-area">
         <div class="chat-header">
             <h2 onselect="clickEvent()">
 
-            </h2>    
+            </h2>
         </div>
         <div class="messages" id="messagesId"></div>
         <div class="input-box">
@@ -28,8 +77,11 @@
             <button class="icon" onclick="sendMessage()">Send</button>
         </div>
 
-    </div>     
-    
+    </div>
+
+    <script src="app.js"></script>
+
 
 </body>
+
 </html>
